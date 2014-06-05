@@ -51,7 +51,7 @@ public class postServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/final_project", "root",
-					"00966501035985");
+					"root");
 
 			PreparedStatement pstatement = con
 					.prepareStatement("INSERT INTO post(gonderi_basligi, gonderi_mesaji) values(?, ?)");
