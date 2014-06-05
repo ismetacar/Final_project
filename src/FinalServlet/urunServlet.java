@@ -49,7 +49,7 @@ public class urunServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/final_project", "root",
-					"00966501035985");
+					"root");
 
 			PreparedStatement pstatement = con
 					.prepareStatement("INSERT INTO urunler(urun_adi, urun_bilgisi,urun_resim) values(?,?,?)");
