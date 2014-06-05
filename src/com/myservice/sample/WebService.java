@@ -20,7 +20,7 @@ public class WebService {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = (Connection) DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/webservicedb", "root",
-					"00966501035985");
+					"root");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
