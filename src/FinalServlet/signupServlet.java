@@ -56,7 +56,7 @@ public class signupServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = (Connection) DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/final_project", "root",
-					"00966501035985");
+					"root");
 
 			PreparedStatement pstatement = conn
 					.prepareStatement("INSERT INTO kullanicilar(kullanici_ad, kullanici_soyad, kullanici_giris_ad, kullanici_sifre) values(?,?,?,?)");
