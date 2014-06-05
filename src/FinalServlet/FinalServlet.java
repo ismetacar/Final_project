@@ -49,7 +49,7 @@ public class FinalServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = (Connection) DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/final_project", "root",
-					"00966501035985");
+					"root");
 
 			pst = conn
 					.prepareStatement("SELECT uye_admin, uye_kullanici_ad, uye_passwd FROM uyeler WHERE uye_kullanici_ad='"
