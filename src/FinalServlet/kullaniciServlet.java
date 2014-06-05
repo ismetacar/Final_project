@@ -52,7 +52,7 @@ public class kullaniciServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = (Connection) DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/final_project", "root",
-					"00966501035985");
+					"root");
 
 			pst = conn
 					.prepareStatement("SELECT kullanici_giris_ad, kullanici_sifre FROM kullanicilar WHERE kullanici_giris_ad='"
